@@ -1,29 +1,22 @@
 //Temporal excercises
 
-var dairy = ['cheese', 'sour cream', 'milk', 'yogurt', 'ice cream', 'milkshake'];
+const getIdealSleepHours = () => {
+    let idealHours = 10; 
+    return idealHours * 7; 
+};
+// func for sleep debt 
+const calculateSleepDebt = () => {
+    let actualSleepHours = getActualSleepHours(); 
+    let idealSleepHours = getIdealSleepHours();
+    if (actualSleepHours == idealSleepHours){
+        console.log('user got perfect amount of sleep.');
+    } else if (actualSleepHours > idealSleepHours) {
+        console.log(`user got more sleep than needed by: ${actualSleepHours - idealSleepHours}`);
+    } else if (actualSleepHours < idealSleepHours) {
+        console.log(`user should get some rest, hours more sleep by: ${idealSleepHours - actualSleepHours}`);
+    } else {
+        return;
+    }
+    };
 
-//Task 1
-function logDairy() {
-  for (var i = 0; i <dairy.length; i++) {
-    console.log (dairy[i]);
-  }
-}
-//logDairy()
-
-const animal = {
-  canJump: true
-  }; 
-
-const bird = Object.create(animal);
-bird.canFly = true;
-bird.hasFeathers = true;
-
-//Task 2
-function birdCan() {
-  for ( const key in bird) {
-    console.log(`${key}: ${bird[key]}`); 
-  }
-}
-birdCan()
-
-//Task 3
+console.log(calculateSleepDebt());
