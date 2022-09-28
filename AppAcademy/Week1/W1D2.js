@@ -348,7 +348,7 @@ function checkNumber(num) {
 
 //Predict whether these expressions evaluate to `true` or `false`. Check your work in the REPL.
 
-* `true && true || false` // True
-* `true && (false || true)` // True
-* `(true || false) && (false || false)` // False
-* `(true || false) || (false || false)` // True
+`true && true || false` // True
+`true && (false || true)` // True
+`(true || false) && (false || false)` // False
+`(true || false) || (false || false)` // True
