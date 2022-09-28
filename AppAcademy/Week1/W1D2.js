@@ -332,3 +332,23 @@ function checkNumber(num) {
 `5 * 5 % 13` //4
 
 `5/(-1 * (5 - (-10)))` //-0.33
+
+//Truth Table
+//Based on the values of A and B from the first two
+//columns, complete the truth table. Check your work in the REPL.
+
+   A   |   B   | A && B  | A &#124;&#124; B
+-------|-------|---------|-----------------
+ True  | True  |  True   |      True        
+ True  | False |  False  |      True     
+ False | True  |  False  |      True           
+ False | False |  False  |      False    
+
+ //Truthy or Falsey
+
+//Predict whether these expressions evaluate to `true` or `false`. Check your work in the REPL.
+
+* `true && true || false` // True
+* `true && (false || true)` // True
+* `(true || false) && (false || false)` // False
+* `(true || false) || (false || false)` // True
