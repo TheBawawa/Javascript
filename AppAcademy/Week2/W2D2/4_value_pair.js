@@ -13,8 +13,19 @@ valuePair(object1, object2, 'name'); // => [ 'One', 'Two' ]
 ***********************************************************************/
 
 function valuePair(obj1, obj2, key) {
+    let answer = [];
 
+    answer.push(obj1[key]);
+    answer.push(obj2[key]);
+
+    return answer;
 }
+
+var object1 = {name: 'One', location: 'NY', age: 3};
+var object2 = {name: 'Two', location: 'SF'};
+
+console.log(valuePair(object1, object2, 'location')); // => [ 'NY', 'SF' ]
+console.log(valuePair(object1, object2, 'name')); // => [ 'One', 'Two' ]
 
 /**************DO NOT MODIFY ANYTHING UNDER THIS  LINE*****************/
 module.exports = valuePair;
